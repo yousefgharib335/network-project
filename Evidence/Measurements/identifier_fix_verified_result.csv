@@ -1,0 +1,11 @@
+part_id,job_id,verdict,inspection_duration_ms,evidence_type,notes
+1,1794701347,PASS,285.6,terminal screenshot,
+2,1794701348,PASS,243.3,terminal screenshot,
+3,1794701349,FAIL,289.8,terminal screenshot,
+4,1794701350,PASS,249.5,terminal screenshot,
+5,1794701351,PASS,265.5,terminal screenshot,
+6,1794701352,,,final batch totals only,part 6 completion is not legible in provided terminal screenshots; no duration invented
+7,1794701353,FAIL,496.5,terminal screenshot,
+8,1794701354,PASS,284.7,terminal screenshot,
+9,1794701355,PASS,315.0,terminal screenshot,
+10,1794701356,PASS,247.7,terminal screenshot,

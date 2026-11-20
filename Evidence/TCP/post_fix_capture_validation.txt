@@ -1,0 +1,46 @@
+Source: uploaded inspection_tcp_identifier_fixed.pcapng, parsed TCP by sequence number.
+ASUS -> ESP32 B: {'PING': 6, 'INSPECT': 10}
+ESP32 B -> ASUS: {'PONG': 6, 'ACCEPT': 10, 'RESULT': 10}
+Two-byte unsigned big-endian prefix recovered for every decoded application frame.
+  8 bytes | PING 198
+  8 bytes | PING 199
+  8 bytes | PING 200
+  8 bytes | PING 201
+  8 bytes | PING 202
+  8 bytes | PING 203
+ 21 bytes | INSPECT 1794701357 11
+ 21 bytes | INSPECT 1794701358 12
+ 21 bytes | INSPECT 1794701359 13
+ 21 bytes | INSPECT 1794701360 14
+ 21 bytes | INSPECT 1794701361 15
+ 21 bytes | INSPECT 1794701362 16
+ 21 bytes | INSPECT 1794701363 17
+ 21 bytes | INSPECT 1794701364 18
+ 21 bytes | INSPECT 1794701365 19
+ 21 bytes | INSPECT 1794701366 20
+  8 bytes | PONG 198
+  8 bytes | PONG 199
+  8 bytes | PONG 200
+  8 bytes | PONG 201
+  8 bytes | PONG 202
+  8 bytes | PONG 203
+ 20 bytes | ACCEPT 1794701357 11
+ 25 bytes | RESULT 1794701357 11 FAIL
+ 20 bytes | ACCEPT 1794701358 12
+ 25 bytes | RESULT 1794701358 12 PASS
+ 20 bytes | ACCEPT 1794701359 13
+ 25 bytes | RESULT 1794701359 13 PASS
+ 20 bytes | ACCEPT 1794701360 14
+ 25 bytes | RESULT 1794701360 14 PASS
+ 20 bytes | ACCEPT 1794701361 15
+ 25 bytes | RESULT 1794701361 15 FAIL
+ 20 bytes | ACCEPT 1794701362 16
+ 25 bytes | RESULT 1794701362 16 PASS
+ 20 bytes | ACCEPT 1794701363 17
+ 25 bytes | RESULT 1794701363 17 PASS
+ 20 bytes | ACCEPT 1794701364 18
+ 25 bytes | RESULT 1794701364 18 PASS
+ 20 bytes | ACCEPT 1794701365 19
+ 25 bytes | RESULT 1794701365 19 FAIL
+ 20 bytes | ACCEPT 1794701366 20
+ 25 bytes | RESULT 1794701366 20 PASS

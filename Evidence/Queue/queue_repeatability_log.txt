@@ -1,0 +1,270 @@
+PS C:\Users\ezzhg> cd "$HOME\Documents\MCT431_Milestone1"
+PS C:\Users\ezzhg\Documents\MCT431_Milestone1> .\.venv\Scripts\python.exe .\gateway\server.py
+Starting MCT431 Gateway...
+ESP32 A reliable UART connected on COM7 (USB session 1 )
+ESP32 B TCP listener on port 9000
+======== Running on http://0.0.0.0:8765 ========
+(Press CTRL+C to quit)
+ESP32 B TCP connection from ('192.168.1.123', 56236)
+Sending framed CONFIG 1794688927 to ESP32 B (attempt 1)
+ESP32 B applied N=2 K=1 delay=0ms
+ESP32 B connected with length-prefix TCP framing
+Sending cycle 100 ms to ESP32 A (attempt 1)
+ESP32 A acknowledged cycle 100 ms seq 1794688928
+Sending framed CONFIG 1794688928 to ESP32 B (attempt 1)
+ESP32 B applied N=4 K=1 delay=3000ms
+Sending framed CONFIG 1794688929 to ESP32 B (attempt 1)
+ESP32 B applied N=4 K=1 delay=3000ms
+Sending cycle 100 ms to ESP32 A (attempt 1)
+ESP32 A rejected ATR: Incorrect ATR frame length
+ESP32 A acknowledged cycle 100 ms seq 1794688929
+Sending START to ESP32 A (attempt 1)
+ESP32 A rejected ATR: Incorrect ATR frame length
+ESP32 A acknowledged control code 1 seq 1794688930
+MCU ACK received; COMMAND: START -> RUNNING
+ESP32 A rejected ATR: Incorrect ATR frame length
+ESP32 part 1 accepted as inspection job 1
+Total produced: 1
+ESP32 B accepted inspection job 1
+Completed inspection job 1: PASS
+ESP32 A rejected ATR: Incorrect ATR frame length
+ESP32 part 2 accepted as inspection job 2
+Total produced: 2
+ESP32 A rejected ATR: Incorrect ATR frame length
+ESP32 part 3 accepted as inspection job 3
+Total produced: 3
+ESP32 B accepted inspection job 2
+Completed inspection job 2: PASS
+ESP32 B accepted inspection job 3
+Completed inspection job 3: FAIL
+ESP32 A rejected ATR: Incorrect ATR frame length
+ESP32 part 4 accepted as inspection job 4
+Total produced: 4
+ESP32 B accepted inspection job 4
+Completed inspection job 4: PASS
+ESP32 A rejected ATR: Incorrect ATR frame length
+ESP32 part 5 accepted as inspection job 5
+Total produced: 5
+ESP32 B accepted inspection job 5
+Completed inspection job 5: PASS
+ESP32 A rejected ATR: Incorrect ATR frame length
+ESP32 part 6 accepted as inspection job 6
+Total produced: 6
+ESP32 B accepted inspection job 6
+Completed inspection job 6: PASS
+ESP32 A rejected ATR: Incorrect ATR frame length
+ESP32 part 7 accepted as inspection job 7
+Total produced: 7
+ESP32 A rejected ATR: Incorrect ATR frame length
+ESP32 part 8 accepted as inspection job 8
+Total produced: 8
+ESP32 B accepted inspection job 7
+Completed inspection job 7: FAIL
+ESP32 B accepted inspection job 8
+Completed inspection job 8: PASS
+ESP32 A rejected ATR: Incorrect ATR frame length
+ESP32 part 9 accepted as inspection job 9
+Total produced: 9
+ESP32 B accepted inspection job 9
+Completed inspection job 9: PASS
+ESP32 A rejected ATR: Incorrect ATR frame length
+ESP32 part 10 accepted as inspection job 10
+Total produced: 10
+ESP32 B accepted inspection job 10
+Completed inspection job 10: PASS
+ESP32 A rejected ATR: Incorrect ATR frame length
+ESP32 part 11 accepted as inspection job 11
+Total produced: 11
+ESP32 B accepted inspection job 11
+Completed inspection job 11: FAIL
+ESP32 A rejected ATR: Incorrect ATR frame length
+ESP32 part 12 accepted as inspection job 12
+Total produced: 12
+ESP32 A rejected ATR: Incorrect ATR frame length
+ESP32 part 13 accepted as inspection job 13
+Total produced: 13
+ESP32 B accepted inspection job 12
+Completed inspection job 12: PASS
+ESP32 A rejected ATR: Incorrect ATR frame length
+ESP32 B accepted inspection job 13
+Completed inspection job 13: PASS
+ESP32 part 14 accepted as inspection job 14
+Total produced: 14
+ESP32 B accepted inspection job 14
+Completed inspection job 14: PASS
+ESP32 A rejected ATR: Incorrect ATR frame length
+ESP32 part 15 accepted as inspection job 15
+Total produced: 15
+ESP32 B accepted inspection job 15
+Completed inspection job 15: FAIL
+ESP32 A rejected ATR: Incorrect ATR frame length
+ESP32 part 16 accepted as inspection job 16
+Total produced: 16
+ESP32 B accepted inspection job 16
+Completed inspection job 16: PASS
+ESP32 A rejected ATR: Incorrect ATR frame length
+ESP32 part 17 accepted as inspection job 17
+Total produced: 17
+ESP32 B accepted inspection job 17
+Completed inspection job 17: PASS
+ESP32 A rejected ATR: Incorrect ATR frame length
+ESP32 part 18 accepted as inspection job 18
+Total produced: 18
+ESP32 B accepted inspection job 18
+Completed inspection job 18: PASS
+ESP32 A rejected ATR: Incorrect ATR frame length
+ESP32 part 19 accepted as inspection job 19
+Total produced: 19
+ESP32 B accepted inspection job 19
+Completed inspection job 19: FAIL
+ESP32 A rejected ATR: Incorrect ATR frame length
+ESP32 part 20 accepted as inspection job 20
+Total produced: 20
+Batch target reached. Stopping ESP32 A; draining inspections.
+Sending STOP to ESP32 A (attempt 1)
+ESP32 A rejected ATR: Incorrect ATR frame length
+ESP32 A acknowledged control code 4 seq 1794688931
+ESP32 B accepted inspection job 20
+Completed inspection job 20: PASS
+BATCH COMPLETE: 20 parts; PASS 15, FAIL 5
+Sending cycle 100 ms to ESP32 A (attempt 1)
+ESP32 A rejected ATR: Incorrect ATR frame length
+ESP32 A acknowledged cycle 100 ms seq 1794688932
+Sending START to ESP32 A (attempt 1)
+ESP32 A rejected ATR: Incorrect ATR frame length
+ESP32 A acknowledged control code 1 seq 1794688933
+MCU ACK received; COMMAND: START -> RUNNING
+ESP32 A rejected ATR: Incorrect ATR frame length
+ESP32 part 21 accepted as inspection job 21
+Total produced: 1
+ESP32 B accepted inspection job 21
+Completed inspection job 21: PASS
+ESP32 A rejected ATR: Incorrect ATR frame length
+ESP32 part 22 accepted as inspection job 22
+Total produced: 2
+ESP32 B accepted inspection job 22
+Completed inspection job 22: PASS
+ESP32 A rejected ATR: Incorrect ATR frame length
+ESP32 part 23 accepted as inspection job 23
+Total produced: 3
+ESP32 B accepted inspection job 23
+Completed inspection job 23: FAIL
+ESP32 A rejected ATR: Incorrect ATR frame length
+ESP32 part 24 accepted as inspection job 24
+Total produced: 4
+ESP32 A rejected ATR: Incorrect ATR frame length
+ESP32 B accepted inspection job 24
+Completed inspection job 24: PASS
+ESP32 part 25 accepted as inspection job 25
+Total produced: 5
+ESP32 B accepted inspection job 25
+Completed inspection job 25: PASS
+ESP32 A rejected ATR: Incorrect ATR frame length
+ESP32 part 26 accepted as inspection job 26
+Total produced: 6
+ESP32 B accepted inspection job 26
+Completed inspection job 26: PASS
+ESP32 A rejected ATR: Incorrect ATR frame length
+ESP32 part 27 accepted as inspection job 27
+Total produced: 7
+ESP32 A rejected ATR: Incorrect ATR frame length
+ESP32 part 28 accepted as inspection job 28
+Total produced: 8
+ESP32 B accepted inspection job 27
+Completed inspection job 27: FAIL
+ESP32 B accepted inspection job 28
+Completed inspection job 28: PASS
+ESP32 A rejected ATR: Incorrect ATR frame length
+ESP32 part 29 accepted as inspection job 29
+Total produced: 9
+ESP32 B accepted inspection job 29
+Completed inspection job 29: PASS
+ESP32 A rejected ATR: Incorrect ATR frame length
+ESP32 part 30 accepted as inspection job 30
+Total produced: 10
+ESP32 B accepted inspection job 30
+Completed inspection job 30: PASS
+ESP32 A rejected ATR: Incorrect ATR frame length
+ESP32 part 31 accepted as inspection job 31
+Total produced: 11
+ESP32 A rejected ATR: Incorrect ATR frame length
+ESP32 part 32 accepted as inspection job 32
+Total produced: 12
+ESP32 B accepted inspection job 31
+Completed inspection job 31: FAIL
+ESP32 A rejected ATR: Incorrect ATR frame length
+ESP32 B accepted inspection job 32
+Completed inspection job 32: PASS
+ESP32 part 33 accepted as inspection job 33
+Total produced: 13
+ESP32 B accepted inspection job 33
+Completed inspection job 33: PASS
+ESP32 A rejected ATR: Incorrect ATR frame length
+ESP32 part 34 accepted as inspection job 34
+Total produced: 14
+ESP32 B accepted inspection job 34
+Completed inspection job 34: PASS
+ESP32 A rejected ATR: Incorrect ATR frame length
+ESP32 part 35 accepted as inspection job 35
+Total produced: 15
+ESP32 B accepted inspection job 35
+Completed inspection job 35: FAIL
+ESP32 A rejected ATR: Incorrect ATR frame length
+ESP32 part 36 accepted as inspection job 36
+Total produced: 16
+ESP32 B accepted inspection job 36
+Completed inspection job 36: PASS
+ESP32 A rejected ATR: Incorrect ATR frame length
+ESP32 part 37 accepted as inspection job 37
+Total produced: 17
+ESP32 B accepted inspection job 37
+Completed inspection job 37: PASS
+ESP32 A rejected ATR: Incorrect ATR frame length
+ESP32 part 38 accepted as inspection job 38
+Total produced: 18
+ESP32 B accepted inspection job 38
+Completed inspection job 38: PASS
+ESP32 A rejected ATR: Incorrect ATR frame length
+ESP32 part 39 accepted as inspection job 39
+Total produced: 19
+ESP32 B accepted inspection job 39
+Completed inspection job 39: FAIL
+ESP32 A rejected ATR: Incorrect ATR frame length
+ESP32 part 40 accepted as inspection job 40
+Total produced: 20
+Batch target reached. Stopping ESP32 A; draining inspections.
+Sending STOP to ESP32 A (attempt 1)
+ESP32 A rejected ATR: Incorrect ATR frame length
+ESP32 B accepted inspection job 40
+Completed inspection job 40: PASS
+BATCH COMPLETE: 20 parts; PASS 15, FAIL 5
+ESP32 A acknowledged control code 4 seq 1794688934
+Sending cycle 100 ms to ESP32 A (attempt 1)
+ESP32 A rejected ATR: Incorrect ATR frame length
+ESP32 A acknowledged cycle 100 ms seq 1794688935
+Sending START to ESP32 A (attempt 1)
+ESP32 A rejected ATR: Incorrect ATR frame length
+ESP32 A acknowledged control code 1 seq 1794688936
+MCU ACK received; COMMAND: START -> RUNNING
+ESP32 A rejected ATR: Incorrect ATR frame length
+ESP32 part 41 accepted as inspection job 41
+Total produced: 1
+ESP32 A rejected ATR: Incorrect ATR frame length
+ESP32 part 42 accepted as inspection job 42
+Total produced: 2
+ESP32 B accepted inspection job 41
+ESP32 A rejected ATR: Incorrect ATR frame length
+ESP32 part 43 accepted as inspection job 43
+Total produced: 3
+ESP32 A rejected ATR: Incorrect ATR frame length
+ESP32 part 44 accepted as inspection job 44
+Total produced: 4
+ESP32 A rejected ATR: Incorrect ATR frame length
+ESP32 part 45 accepted as inspection job 45
+Total produced: 5
+INSPECTION QUEUE LIMIT 5 REACHED: entering FAULT
+FAULT: Inspection capacity 5 reached
+Sending STOP to ESP32 A (attempt 1)
+ESP32 A rejected ATR: Incorrect ATR frame length
+ESP32 A acknowledged control code 4 seq 1794688937
+Completed inspection job 41: PASS

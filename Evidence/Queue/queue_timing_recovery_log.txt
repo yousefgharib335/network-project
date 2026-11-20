@@ -1,0 +1,187 @@
+PS C:\Users\ezzhg> cd "$HOME\Documents\MCT431_Milestone1"
+PS C:\Users\ezzhg\Documents\MCT431_Milestone1> .\.venv\Scripts\python.exe .\gateway\server.py
+Starting MCT431 Gateway...
+ESP32 A reliable UART connected on COM7 (USB session 1 )
+ESP32 B TCP listener on port 9000
+======== Running on http://0.0.0.0:8765 ========
+(Press CTRL+C to quit)
+ESP32 B TCP connection from ('192.168.1.123', 56256)
+Sending framed CONFIG 1794689949 to ESP32 B (attempt 1)
+ESP32 B applied N=2 K=1 delay=0ms
+ESP32 B connected with length-prefix TCP framing
+Sending cycle 100 ms to ESP32 A (attempt 1)
+ESP32 A acknowledged cycle 100 ms seq 1794689950
+Sending framed CONFIG 1794689950 to ESP32 B (attempt 1)
+ESP32 B applied N=4 K=1 delay=3000ms
+Sending cycle 100 ms to ESP32 A (attempt 1)
+ESP32 A acknowledged cycle 100 ms seq 1794689951
+Sending START to ESP32 A (attempt 1)
+ESP32 A acknowledged control code 1 seq 1794689952
+[2026-11-14T22:59:47.628+02:00] PRODUCED part=1 inspection_job=1794689949 interval_ms=None outstanding=1/5
+Total produced: 1
+MCU ACK received; COMMAND: START -> RUNNING
+[2026-11-14T22:59:47.845+02:00] PRODUCED part=2 inspection_job=1794689950 interval_ms=217.0 outstanding=2/5
+Total produced: 2
+[2026-11-14T22:59:47.859+02:00] INSPECTION START job=1794689949 configured_ms=3000
+ESP32 B accepted inspection job 1794689949
+[2026-11-14T22:59:48.062+02:00] PRODUCED part=3 inspection_job=1794689951 interval_ms=217.3 outstanding=3/5
+Total produced: 3
+[2026-11-14T22:59:48.266+02:00] PRODUCED part=4 inspection_job=1794689952 interval_ms=204.1 outstanding=4/5
+Total produced: 4
+[2026-11-14T22:59:48.485+02:00] PRODUCED part=5 inspection_job=1794689953 interval_ms=218.5 outstanding=5/5
+Total produced: 5
+[2026-11-14T22:59:48.485+02:00] INSPECTION QUEUE LIMIT 5 REACHED: entering FAULT
+FAULT: Inspection capacity 5 reached
+Sending STOP to ESP32 A (attempt 1)
+ESP32 A acknowledged control code 4 seq 1794689953
+[2026-11-14T22:59:50.921+02:00] INSPECTION COMPLETE job=1794689949 result=PASS duration_ms=3062.0 configured_ms=3000
+Sending STOP to ESP32 A (attempt 1)
+ESP32 A acknowledged control code 4 seq 1794689954
+FAULT RESET -> IDLE; pending inspection jobs preserved and draining
+[2026-11-14T22:59:55.032+02:00] INSPECTION START job=1794689950 configured_ms=3000
+ESP32 B accepted inspection job 1794689950
+[2026-11-14T22:59:58.107+02:00] INSPECTION COMPLETE job=1794689950 result=PASS duration_ms=3074.4 configured_ms=3000
+[2026-11-14T22:59:58.107+02:00] INSPECTION START job=1794689951 configured_ms=3000
+ESP32 B accepted inspection job 1794689951
+[2026-11-14T23:00:01.167+02:00] INSPECTION COMPLETE job=1794689951 result=FAIL duration_ms=3059.4 configured_ms=3000
+[2026-11-14T23:00:01.167+02:00] INSPECTION START job=1794689952 configured_ms=3000
+ESP32 B accepted inspection job 1794689952
+[2026-11-14T23:00:04.222+02:00] INSPECTION COMPLETE job=1794689952 result=PASS duration_ms=3054.9 configured_ms=3000
+[2026-11-14T23:00:04.222+02:00] INSPECTION START job=1794689953 configured_ms=3000
+ESP32 B accepted inspection job 1794689953
+[2026-11-14T23:00:07.273+02:00] INSPECTION COMPLETE job=1794689953 result=PASS duration_ms=3050.3 configured_ms=3000
+Sending cycle 100 ms to ESP32 A (attempt 1)
+ESP32 A acknowledged cycle 100 ms seq 1794689955
+Sending START to ESP32 A (attempt 1)
+ESP32 A acknowledged control code 1 seq 1794689956
+[2026-11-14T23:00:09.280+02:00] PRODUCED part=6 inspection_job=1794689954 interval_ms=20795.7 outstanding=1/5
+Total produced: 6
+MCU ACK received; COMMAND: START -> RUNNING
+[2026-11-14T23:00:09.451+02:00] INSPECTION START job=1794689954 configured_ms=3000
+[2026-11-14T23:00:09.484+02:00] PRODUCED part=7 inspection_job=1794689955 interval_ms=203.3 outstanding=2/5
+Total produced: 7
+ESP32 B accepted inspection job 1794689954
+[2026-11-14T23:00:09.701+02:00] PRODUCED part=8 inspection_job=1794689956 interval_ms=217.1 outstanding=3/5
+Total produced: 8
+[2026-11-14T23:00:09.904+02:00] PRODUCED part=9 inspection_job=1794689957 interval_ms=202.7 outstanding=4/5
+Total produced: 9
+[2026-11-14T23:00:10.120+02:00] PRODUCED part=10 inspection_job=1794689958 interval_ms=216.8 outstanding=5/5
+Total produced: 10
+[2026-11-14T23:00:10.121+02:00] INSPECTION QUEUE LIMIT 5 REACHED: entering FAULT
+FAULT: Inspection capacity 5 reached
+Sending STOP to ESP32 A (attempt 1)
+ESP32 A acknowledged control code 4 seq 1794689957
+[2026-11-14T23:00:12.533+02:00] INSPECTION COMPLETE job=1794689954 result=PASS duration_ms=3082.6 configured_ms=3000
+Sending STOP to ESP32 A (attempt 1)
+ESP32 A acknowledged control code 4 seq 1794689958
+FAULT RESET -> IDLE; pending inspection jobs preserved and draining
+[2026-11-14T23:00:23.080+02:00] INSPECTION START job=1794689955 configured_ms=3000
+ESP32 B accepted inspection job 1794689955
+[2026-11-14T23:00:26.153+02:00] INSPECTION COMPLETE job=1794689955 result=FAIL duration_ms=3072.3 configured_ms=3000
+[2026-11-14T23:00:26.153+02:00] INSPECTION START job=1794689956 configured_ms=3000
+ESP32 B accepted inspection job 1794689956
+[2026-11-14T23:00:29.207+02:00] INSPECTION COMPLETE job=1794689956 result=PASS duration_ms=3053.8 configured_ms=3000
+[2026-11-14T23:00:29.207+02:00] INSPECTION START job=1794689957 configured_ms=3000
+ESP32 B accepted inspection job 1794689957
+[2026-11-14T23:00:32.265+02:00] INSPECTION COMPLETE job=1794689957 result=PASS duration_ms=3057.4 configured_ms=3000
+[2026-11-14T23:00:32.265+02:00] INSPECTION START job=1794689958 configured_ms=3000
+ESP32 B accepted inspection job 1794689958
+[2026-11-14T23:00:35.326+02:00] INSPECTION COMPLETE job=1794689958 result=PASS duration_ms=3061.0 configured_ms=3000
+Sending cycle 100 ms to ESP32 A (attempt 1)
+ESP32 A acknowledged cycle 100 ms seq 1794689959
+Sending START to ESP32 A (attempt 1)
+ESP32 A acknowledged control code 1 seq 1794689960
+[2026-11-14T23:00:42.285+02:00] PRODUCED part=11 inspection_job=1794689959 interval_ms=32164.4 outstanding=1/5
+Total produced: 11
+[2026-11-14T23:00:42.285+02:00] INSPECTION START job=1794689959 configured_ms=3000
+MCU ACK received; COMMAND: START -> RUNNING
+ESP32 B accepted inspection job 1794689959
+[2026-11-14T23:00:42.501+02:00] PRODUCED part=12 inspection_job=1794689960 interval_ms=216.7 outstanding=2/5
+Total produced: 12
+[2026-11-14T23:00:42.719+02:00] PRODUCED part=13 inspection_job=1794689961 interval_ms=217.2 outstanding=3/5
+Total produced: 13
+[2026-11-14T23:00:42.936+02:00] PRODUCED part=14 inspection_job=1794689962 interval_ms=217.8 outstanding=4/5
+Total produced: 14
+[2026-11-14T23:00:43.139+02:00] PRODUCED part=15 inspection_job=1794689963 interval_ms=202.9 outstanding=5/5
+Total produced: 15
+[2026-11-14T23:00:43.140+02:00] INSPECTION QUEUE LIMIT 5 REACHED: entering FAULT
+FAULT: Inspection capacity 5 reached
+Sending STOP to ESP32 A (attempt 1)
+ESP32 A acknowledged control code 4 seq 1794689961
+[2026-11-14T23:00:45.382+02:00] INSPECTION COMPLETE job=1794689959 result=FAIL duration_ms=3096.7 configured_ms=3000
+Sending STOP to ESP32 A (attempt 1)
+ESP32 A acknowledged control code 4 seq 1794689962
+FAULT RESET -> IDLE; pending inspection jobs preserved and draining
+[2026-11-14T23:00:47.558+02:00] INSPECTION START job=1794689960 configured_ms=3000
+ESP32 B accepted inspection job 1794689960
+[2026-11-14T23:00:50.611+02:00] INSPECTION COMPLETE job=1794689960 result=PASS duration_ms=3053.1 configured_ms=3000
+[2026-11-14T23:00:50.612+02:00] INSPECTION START job=1794689961 configured_ms=3000
+ESP32 B accepted inspection job 1794689961
+[2026-11-14T23:00:53.698+02:00] INSPECTION COMPLETE job=1794689961 result=PASS duration_ms=3086.6 configured_ms=3000
+[2026-11-14T23:00:53.699+02:00] INSPECTION START job=1794689962 configured_ms=3000
+ESP32 B accepted inspection job 1794689962
+[2026-11-14T23:00:56.753+02:00] INSPECTION COMPLETE job=1794689962 result=PASS duration_ms=3053.8 configured_ms=3000
+[2026-11-14T23:00:56.753+02:00] INSPECTION START job=1794689963 configured_ms=3000
+ESP32 B accepted inspection job 1794689963
+[2026-11-14T23:00:59.842+02:00] INSPECTION COMPLETE job=1794689963 result=FAIL duration_ms=3088.8 configured_ms=3000
+Sending cycle 100 ms to ESP32 A (attempt 1)
+ESP32 A acknowledged cycle 100 ms seq 1794689963
+Sending START to ESP32 A (attempt 1)
+ESP32 A acknowledged control code 1 seq 1794689964
+[2026-11-14T23:01:05.217+02:00] PRODUCED part=16 inspection_job=1794689964 interval_ms=22077.9 outstanding=1/5
+Total produced: 16
+MCU ACK received; COMMAND: START -> RUNNING
+[2026-11-14T23:01:05.435+02:00] PRODUCED part=17 inspection_job=1794689965 interval_ms=217.7 outstanding=2/5
+Total produced: 17
+[2026-11-14T23:01:05.526+02:00] INSPECTION START job=1794689964 configured_ms=3000
+ESP32 B accepted inspection job 1794689964
+[2026-11-14T23:01:05.639+02:00] PRODUCED part=18 inspection_job=1794689966 interval_ms=204.1 outstanding=3/5
+Total produced: 18
+[2026-11-14T23:01:05.843+02:00] PRODUCED part=19 inspection_job=1794689967 interval_ms=203.7 outstanding=4/5
+Total produced: 19
+[2026-11-14T23:01:06.047+02:00] PRODUCED part=20 inspection_job=1794689968 interval_ms=203.8 outstanding=5/5
+Total produced: 20
+Batch target reached. Stopping ESP32 A; draining inspections.
+Sending STOP to ESP32 A (attempt 1)
+ESP32 A acknowledged control code 4 seq 1794689965
+[2026-11-14T23:01:08.648+02:00] INSPECTION COMPLETE job=1794689964 result=PASS duration_ms=3121.4 configured_ms=3000
+[2026-11-14T23:01:08.648+02:00] INSPECTION START job=1794689965 configured_ms=3000
+ESP32 B accepted inspection job 1794689965
+[2026-11-14T23:01:11.701+02:00] INSPECTION COMPLETE job=1794689965 result=PASS duration_ms=3052.7 configured_ms=3000
+[2026-11-14T23:01:11.701+02:00] INSPECTION START job=1794689966 configured_ms=3000
+ESP32 B accepted inspection job 1794689966
+[2026-11-14T23:01:14.766+02:00] INSPECTION COMPLETE job=1794689966 result=PASS duration_ms=3064.9 configured_ms=3000
+[2026-11-14T23:01:14.766+02:00] INSPECTION START job=1794689967 configured_ms=3000
+ESP32 B accepted inspection job 1794689967
+[2026-11-14T23:01:17.826+02:00] INSPECTION COMPLETE job=1794689967 result=FAIL duration_ms=3059.6 configured_ms=3000
+[2026-11-14T23:01:17.826+02:00] INSPECTION START job=1794689968 configured_ms=3000
+ESP32 B accepted inspection job 1794689968
+[2026-11-14T23:01:20.881+02:00] INSPECTION COMPLETE job=1794689968 result=PASS duration_ms=3054.2 configured_ms=3000
+BATCH COMPLETE: 20 parts; PASS 15, FAIL 5
+Sending cycle 100 ms to ESP32 A (attempt 1)
+ESP32 A acknowledged cycle 100 ms seq 1794689966
+Sending START to ESP32 A (attempt 1)
+ESP32 A acknowledged control code 1 seq 1794689967
+[2026-11-14T23:01:29.979+02:00] PRODUCED part=21 inspection_job=1794689969 interval_ms=203.8 outstanding=1/5
+Total produced: 1
+MCU ACK received; COMMAND: START -> RUNNING
+[2026-11-14T23:01:30.039+02:00] INSPECTION START job=1794689969 configured_ms=3000
+ESP32 B accepted inspection job 1794689969
+[2026-11-14T23:01:30.195+02:00] PRODUCED part=22 inspection_job=1794689970 interval_ms=216.2 outstanding=2/5
+Total produced: 2
+[2026-11-14T23:01:30.399+02:00] PRODUCED part=23 inspection_job=1794689971 interval_ms=204.4 outstanding=3/5
+Total produced: 3
+[2026-11-14T23:01:30.618+02:00] PRODUCED part=24 inspection_job=1794689972 interval_ms=218.2 outstanding=4/5
+Total produced: 4
+[2026-11-14T23:01:30.835+02:00] PRODUCED part=25 inspection_job=1794689973 interval_ms=217.7 outstanding=5/5
+Total produced: 5
+[2026-11-14T23:01:30.836+02:00] INSPECTION QUEUE LIMIT 5 REACHED: entering FAULT
+FAULT: Inspection capacity 5 reached
+Sending STOP to ESP32 A (attempt 1)
+ESP32 A acknowledged control code 4 seq 1794689968
+Sending STOP to ESP32 A (attempt 1)
+ESP32 A acknowledged control code 4 seq 1794689969
+FAULT RESET -> IDLE; pending inspection jobs preserved and draining
+[2026-11-14T23:01:33.096+02:00] INSPECTION COMPLETE job=1794689969 result=PASS duration_ms=3056.5 configured_ms=3000
+[2026-11-14T23:01:33.096+02:00] INSPECTION START job=1794689970 configured_ms=3000
+ESP32 B accepted inspection job 1794689970

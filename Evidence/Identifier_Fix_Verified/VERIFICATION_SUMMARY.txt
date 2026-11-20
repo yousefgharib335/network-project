@@ -1,0 +1,21 @@
+MCT431 Milestone 1 — dual-ID hardware validation, 15 November 2026
+Source: five actual user-provided screenshots; not a verbatim complete terminal log.
+
+Configuration: batch 10, cycle 1000 ms, inspection N=4 K=1, delay 200 ms.
+Gateway serial ESP32 A: COM9. Wi-Fi ESP32 B connects ASUS TCP 9000.
+ESP32 A part ID forwarded without change into inspection payload and returned ACK/RESULT.
+
+Example observations:
+PRODUCED part=3 inspection_job=1794701349
+INSPECTION START job=1794701349 part=3 configured_ms=200
+INSPECTION COMPLETE job=1794701349 part=3 result=FAIL duration_ms=289.8
+INSPECTION COMPLETE job=1794701353 part=7 result=FAIL duration_ms=496.5
+ESP32 A acknowledged control code 4 seq 1794701351
+BATCH COMPLETE: 10 parts; PASS 8, FAIL 2
+
+/api/audit screenshot:
+produced=10, completed=10, pending=0, balanced=true
+serial: duplicates=0, crc_errors=0, bad_frames=0
+
+Evidence files: 5 screenshots in this directory.
+Historical pcapng in ../TCP is pre-identifier-fix; new raw capture would be helpful.
